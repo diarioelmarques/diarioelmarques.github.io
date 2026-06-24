@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL MARQUÉS | Política sin filtros</title>
+    <!-- Etiquetas Open Graph para Instagram / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tu-dominio.netlify.app/">
+    <meta property="og:title" content="EL MARQUÉS | Política sin filtros">
+    <meta property="og:description" content="Opinión libre e independiente sin intermediarios corporativos. Análisis político sin anestesia.">
+    <meta property="og:image" content="https://tu-dominio.netlify.app/sede-chimbas.JPG">
+
+    <!-- Etiquetas para Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EL MARQUÉS | Política sin filtros">
+    <meta name="twitter:description" content="Opinión libre e independiente sin intermediarios corporativos.">
+    <meta name="twitter:image" content="https://tu-dominio.netlify.app/sede-chimbas.JPG">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* ESTILOS MONOCROMÁTICOS ESTILO BLENDER */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body { 
+            font-family: 'Impact', 'Arial Black', sans-serif; 
+            background-color: #0b0f12; 
+            color: #ffffff; 
+            padding-bottom: 50px;
+            /* Integración del fondo estático */
+            background-image: url('fondo-notas.PNG');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* Filtro oscuro para legibilidad del contenido */
+            background-blend-mode: overlay; 
+            background-color: rgba(11, 15, 18, 0.9);
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+        
+        header { background-color: #ffffff; color: #0b0f12; padding: 40px 20px; text-align: center; border: 4px solid #ffffff; margin-top: 10px; box-shadow: 8px 8px 0px #2d3741; }
+        header h1 { font-size: 4rem; text-transform: uppercase; letter-spacing: 2px; line-height: 1; margin: 0; }
+        header p { font-family: 'Arial', sans-serif; font-size: 1.2rem; font-weight: bold; margin-top: 12px; text-transform: uppercase; letter-spacing: 3px; background: #0b0f12; color: #ffffff; display: inline-block; padding: 5px 20px; margin-bottom: 15px; }
+
+        .header-social-link { font-family: 'Arial', sans-serif; font-size: 0.8rem; font-weight: bold; color: #ffffff; text-decoration: none; background: #161c22; padding: 6px 14px; border: 2px solid #0b0f12; margin: 0 4px; text-transform: uppercase; letter-spacing: 1px; display: inline-block; transition: transform 0.1s; }
+        .header-social-link:hover { transform: translate(-1px, -1px); background: #0b0f12; }
+        .header-social-link i { margin-right: 6px; font-size: 0.95rem; vertical-align: middle; }
+
+        .main-content { display: grid; grid-template-columns: 2fr 1fr; gap: 30px; margin-top: 40px; }
+        @media (max-width: 768px) { .main-content { grid-template-columns: 1fr; } }
+
+        .main-story { background: #161c22; padding: 30px; border: 3px solid #ffffff; box-shadow: 6px 6px 0px #2d3741; height: fit-content; }
+        .tag-destacado { background: #ffffff; color: #0b0f12; padding: 6px 12px; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; display: inline-block; margin-bottom: 15px; }
+        .main-story h2 { font-size: 2.3rem; margin-bottom: 15px; color: #ffffff; text-transform: uppercase; line-height: 1.1; }
+        .main-story p { font-family: 'Arial', sans-serif; font-size: 1.15rem; line-height: 1.6; color: #e0e0e0; margin-bottom: 20px; }
+        .meta-info { font-family: 'Arial', sans-serif; font-size: 0.85rem; color: #a5b1c2; margin-bottom: 20px; text-transform: uppercase; font-weight: bold; }
+
+        .story-image-container { margin-bottom: 25px; width: 100%; }
+        .story-image-container img { display: block; width: 100%; height: auto; border: 3px solid #ffffff; box-shadow: 6px 6px 0px #2d3741; }
+        .story-image-container figcaption { font-family: 'Arial', sans-serif; font-size: 0.9rem; line-height: 1.4; color: #a5b1c2; margin-top: 10px; padding-left: 5px; border-left: 2px solid #ffffff; }
+
+        .btn-leer-mas { display: inline-block; background: #ffffff; color: #0b0f12; padding: 12px 24px; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 1rem; border: 2px solid #ffffff; transition: transform 0.1s; }
+        .btn-leer-mas:hover { transform: translate(-2px, -2px); box-shadow: 4px 4px 0px #2d3741; }
+
+        .sidebar { background: #ffffff; color: #0b0f12; padding: 25px; border: 3px solid #ffffff; box-shadow: 6px 6px 0px #2d3741; height: fit-content; display: flex; flex-direction: column; }
+        .sidebar h3 { font-size: 1.8rem; text-transform: uppercase; margin-bottom: 15px; border-bottom: 3px solid #0b0f12; padding-bottom: 5px; }
+        .sidebar p { font-family: 'Arial', sans-serif; font-size: 1rem; font-weight: bold; margin-bottom: 20px; }
+        
+        .dossier-card { background: #161c22; color: #ffffff; padding: 20px; margin-bottom: 15px; border: 2px solid #0b0f12; }
+        .dossier-card h4 { font-size: 1.2rem; text-transform: uppercase; color: #ffffff; margin-bottom: 5px; }
+        .dossier-card p { font-family: 'Arial', sans-serif; font-size: 0.9rem; color: #ced4da; margin-bottom: 15px; font-weight: normal; }
+        .btn-download { display: block; text-align: center; background: #ffffff; color: #0b0f12; padding: 10px; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; border: 2px solid #0b0f12; }
+
+        .video-box-link { display: block; text-decoration: none; color: #ffffff; margin: 15px 0; border: 3px solid #0b0f12; background: #0b0f12; position: relative; transition: transform 0.1s; }
+        .video-box-link:hover { transform: translate(-2px, -2px); box-shadow: 4px 4px 0px #2d3741; }
+        .video-box-content { padding: 40px 20px; text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 200px; }
+        .video-box-tag { font-family: 'Arial', sans-serif; font-size: 0.75rem; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; color: #a5b1c2; margin-bottom: 10px; }
+        .video-box-title { font-size: 1.6rem; text-transform: uppercase; line-height: 1.2; letter-spacing: 1px; color: #ffffff; margin-bottom: 20px; }
+        .video-box-play { background: #ffffff; color: #0b0f12; padding: 8px 16px; font-size: 0.9rem; font-weight: bold; letter-spacing: 1px; text-transform: uppercase; border: 2px solid #ffffff; }
+        
+        footer { font-family: 'Arial', sans-serif; text-align: center; padding: 30px; margin-top: 60px; color: #555; font-size: 0.85rem; text-transform: uppercase; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>EL MARQUÉS</h1>
+            <p>política sin filtros</p>
+            <div>
+                <a href="https://www.instagram.com/diarioelmarques/" target="_blank" class="header-social-link"><i class="fab fa-instagram"></i>Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=61591144656658" target="_blank" class="header-social-link"><i class="fab fa-facebook"></i>Facebook</a>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <section class="main-story">
+                <span class="tag-destacado">Opinión</span>
+                <figure class="story-image-container">
+                    <img src="sede-chimbas.JPG" alt="Inauguración Sede">
+                    <figcaption>Despliegue territorial: la incógnita financiera tras la apertura de nuevas sedes.</figcaption>
+                </figure>
+                <h2>El "Mago" de las Sedes: ¿Cómo inaugurar locales con 174 millones bajo el brazo?</h2>
+                <div class="meta-info">El Marques bajo la luz | 23 de Junio de 2026</div>
+                <p>En San Juan, la política ha dejado de ser una cuestión de proyectos para convertirse en un fascinante acto de ilusionismo. Mientras el diputado nacional José Peluc desafía las leyes de la economía inaugurando sedes de La Libertad Avanza, su historial crediticio —que acumula 174 millones de pesos en deudas— plantea una pregunta inevitable.</p>
+                <a href="nota-3.html" class="btn-leer-mas">Leer columna completa →</a>
+            </section>
+
+            <aside class="sidebar">
+                <h3>El Búnker</h3>
+                <p>Opinión libre e independiente sin intermediarios corporativos.</p>
+                
+                <div class="dossier-card">
+                    <h4>ENTRE LA SOBERANÍA Y LA SOLEDAD</h4>
+                    <p>La fábula de los límites provinciales.</p>
+                    <a href="nota-1.html" class="btn-download">Leer Archivo</a>
+                </div>
+
+                <div class="dossier-card">
+                    <h4>EL CIRCUITO ELSZTAIN</h4>
+                    <p>Las sospechas financieras detrás del parate minero en Hualilán.</p>
+                    <a href="nota-2.html" class="btn-download">Leer Archivo</a>
+                </div>
+
+                <div class="dossier-card">
+                    <h4>MANIFIESTO</h4>
+                    <p>Declaración de principios: por qué venimos a sacudir las estructuras.</p>
+                    <a href="nota-presentacion.html" class="btn-download">Leer Presentación</a>
+                </div>
+
+                <div class="dossier-card" style="margin-bottom: 0;">
+                    <h4>Audiovisual</h4>
+                    <p>Contenido sin anestesia.</p>
+                    <a href="https://www.instagram.com/reel/DUrcY19kXWX/" target="_blank" class="video-box-link">
+                        <div class="video-box-content">
+                            <span class="video-box-tag">NUEVO REEL</span>
+                            <div class="video-box-title">LOS DUEÑOS DEL AGUA</div>
+                            <div class="video-box-play">► VER INFORME</div>
+                        </div>
+                    </a>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+       <p>© 2026 EL MARQUÉS. Contenido amparado bajo el Art. 14 de la C.N. y el Art. 13 de la CADH.</p>
+    </footer>
+</body>
+</html>
