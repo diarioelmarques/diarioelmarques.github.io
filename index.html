@@ -51,11 +51,6 @@
         @media (max-width: 768px) { .main-content { grid-template-columns: 1fr; } }
 
         .main-story { background: #161c22; padding: 30px; border: 3px solid #ffffff; box-shadow: 6px 6px 0px #2d3741; height: fit-content; }
-        
-        /* Nuevo contenedor de imagen */
-        .ad-container { margin-top: 40px; }
-        .ad-container img { display: block; width: 100%; height: auto; }
-
         .tag-destacado { background: #ffffff; color: #0b0f12; padding: 6px 12px; font-size: 0.9rem; font-weight: bold; text-transform: uppercase; display: inline-block; margin-bottom: 15px; }
         .main-story h2 { font-size: 2.3rem; margin-bottom: 15px; color: #ffffff; text-transform: uppercase; line-height: 1.1; }
         .main-story p { font-family: 'Arial', sans-serif; font-size: 1.15rem; line-height: 1.6; color: #e0e0e0; margin-bottom: 20px; }
@@ -68,6 +63,10 @@
 
         .btn-leer-mas { display: inline-block; background: #ffffff; color: #0b0f12; padding: 12px 24px; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 1rem; border: 2px solid #ffffff; transition: transform 0.1s; }
         .btn-leer-mas:hover { transform: translate(-2px, -2px); box-shadow: 4px 4px 0px #2d3741; }
+
+        /* Estilo para el contenedor de imagen insertado */
+        .ad-container { margin-top: 40px; }
+        .ad-container img { display: block; width: 100%; height: auto; }
 
         .sidebar { background: #ffffff; color: #0b0f12; padding: 25px; border: 3px solid #ffffff; box-shadow: 6px 6px 0px #2d3741; height: fit-content; display: flex; flex-direction: column; }
         .sidebar h3 { font-size: 1.8rem; text-transform: uppercase; margin-bottom: 15px; border-bottom: 3px solid #0b0f12; padding-bottom: 5px; }
@@ -111,11 +110,10 @@
                 <div class="meta-info">El Marques bajo la luz | 23 de Junio de 2026</div>
                 <p>En San Juan, la política ha dejado de ser una cuestión de proyectos para convertirse en un fascinante acto de ilusionismo. Mientras el diputado nacional José Peluc desafía las leyes de la economía inaugurando sedes de La Libertad Avanza, su historial crediticio —que acumula 174 millones de pesos en deudas— plantea una pregunta inevitable.</p>
                 <a href="nota-3.html" class="btn-leer-mas">Leer columna completa →</a>
-            </section>
-
-            <!-- Nueva sección insertada -->
-            <section class="ad-container">
-                <img src="time-travel.jpg" alt="Flyer Time Travel">
+                
+                <section class="ad-container">
+                    <img src="time-travel.png" alt="Flyer Time Travel">
+                </section>
             </section>
 
             <aside class="sidebar">
