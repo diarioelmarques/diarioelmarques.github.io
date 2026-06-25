@@ -54,18 +54,17 @@
         .main-story p { font-family: 'Arial', sans-serif; font-size: 1.15rem; line-height: 1.6; color: #e0e0e0; margin-bottom: 20px; }
         .meta-info { font-family: 'Arial', sans-serif; font-size: 0.85rem; color: #a5b1c2; margin-bottom: 20px; text-transform: uppercase; font-weight: bold; }
 
-        /* Estilo Blender para la imagen principal */
         .imagen-blender { display: block; width: 100%; height: auto; margin-bottom: 25px; border: 3px solid #ffffff; box-shadow: 6px 6px 0px #2d3741; }
         
         .btn-leer-mas { display: inline-block; background: #ffffff; color: #0b0f12; padding: 12px 24px; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 1rem; border: 2px solid #ffffff; transition: transform 0.1s; }
         .btn-leer-mas:hover { transform: translate(-2px, -2px); box-shadow: 4px 4px 0px #2d3741; }
 
         .ad-container { margin-top: 40px; }
-        .ad-container img { display: block; width: 100%; height: auto; margin-top: 15px; border: 3px solid #ffffff; box-shadow: 6px 6px 0px #2d3741; }
+        .ad-container img { display: block; width: 100%; height: auto; }
         
-        /* Control de visibilidad responsive */
-        .sky-mobile { display: none; margin-bottom: 30px; }
-        .sky-desktop { display: block; }
+        /* Control Publicidad */
+        .sky-desktop { display: block; margin-top: 20px; border: 3px solid #ffffff; box-shadow: 6px 6px 0px #2d3741; }
+        .sky-mobile { display: none; width: 100%; margin-bottom: 20px; border: 3px solid #ffffff; box-shadow: 6px 6px 0px #2d3741; }
         
         @media (max-width: 768px) {
             .sky-desktop { display: none; }
@@ -121,6 +120,8 @@
                 <h3>El Búnker</h3>
                 <p>Opinión libre e independiente sin intermediarios corporativos.</p>
                 
+                <img src="sky-gym.png" alt="Publicidad Sky Gym" class="sky-mobile">
+                
                 <div class="dossier-card">
                     <h4>EL "MAGO" DE LAS SEDES</h4>
                     <p>¿Cómo inaugurar locales con 174 millones bajo el brazo?</p>
@@ -143,11 +144,6 @@
                     <h4>MANIFIESTO</h4>
                     <p>Declaración de principios: por qué venimos a sacudir las estructuras.</p>
                     <a href="nota-presentacion.html" class="btn-download">Leer Presentación</a>
-                </div>
-
-                <!-- Imagen en formato CELULAR -->
-                <div class="sky-mobile">
-                    <img src="sky-gym.png" alt="Publicidad Sky Gym">
                 </div>
 
                 <div class="dossier-card" style="margin-bottom: 0;">
