@@ -61,7 +61,16 @@
         .btn-leer-mas:hover { transform: translate(-2px, -2px); box-shadow: 4px 4px 0px #2d3741; }
 
         .ad-container { margin-top: 40px; }
-        .ad-container img { display: block; width: 100%; height: auto; }
+        .ad-container img { display: block; width: 100%; height: auto; margin-top: 15px; border: 3px solid #ffffff; box-shadow: 6px 6px 0px #2d3741; }
+        
+        /* Control de visibilidad responsive */
+        .sky-mobile { display: none; margin-bottom: 30px; }
+        .sky-desktop { display: block; }
+        
+        @media (max-width: 768px) {
+            .sky-desktop { display: none; }
+            .sky-mobile { display: block; }
+        }
 
         .sidebar { background: #ffffff; color: #0b0f12; padding: 25px; border: 3px solid #ffffff; box-shadow: 6px 6px 0px #2d3741; height: fit-content; display: flex; flex-direction: column; }
         .sidebar h3 { font-size: 1.8rem; text-transform: uppercase; margin-bottom: 15px; border-bottom: 3px solid #0b0f12; padding-bottom: 5px; }
@@ -104,6 +113,7 @@
                 
                 <section class="ad-container">
                     <img src="time-travel.png" alt="Flyer Time Travel">
+                    <img src="sky-gym.png" alt="Publicidad Sky Gym" class="sky-desktop">
                 </section>
             </section>
 
@@ -133,6 +143,11 @@
                     <h4>MANIFIESTO</h4>
                     <p>Declaración de principios: por qué venimos a sacudir las estructuras.</p>
                     <a href="nota-presentacion.html" class="btn-download">Leer Presentación</a>
+                </div>
+
+                <!-- Imagen en formato CELULAR -->
+                <div class="sky-mobile">
+                    <img src="sky-gym.png" alt="Publicidad Sky Gym">
                 </div>
 
                 <div class="dossier-card" style="margin-bottom: 0;">
