@@ -26,13 +26,11 @@
             background-color: #0b0f12; 
             color: #ffffff; 
             padding-bottom: 50px;
-            /* Integración del fondo estático corregido a minúsculas */
             background-image: url('fondo-notas.png');
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            /* Filtro oscuro para legibilidad del contenido */
             background-blend-mode: overlay; 
             background-color: rgba(11, 15, 18, 0.9);
         }
@@ -56,21 +54,17 @@
         .main-story p { font-family: 'Arial', sans-serif; font-size: 1.15rem; line-height: 1.6; color: #e0e0e0; margin-bottom: 20px; }
         .meta-info { font-family: 'Arial', sans-serif; font-size: 0.85rem; color: #a5b1c2; margin-bottom: 20px; text-transform: uppercase; font-weight: bold; }
 
-        .story-image-container { margin-bottom: 25px; width: 100%; }
-        /* Imagen corregida a minúsculas */
-        .story-image-container img { display: block; width: 100%; height: auto; border: 3px solid #ffffff; box-shadow: 6px 6px 0px #2d3741; }
-        .story-image-container figcaption { font-family: 'Arial', sans-serif; font-size: 0.9rem; line-height: 1.4; color: #a5b1c2; margin-top: 10px; padding-left: 5px; border-left: 2px solid #ffffff; }
-
+        /* Estilo Blender para la imagen principal */
+        .imagen-blender { display: block; width: 100%; height: auto; margin-bottom: 25px; border: 3px solid #ffffff; box-shadow: 6px 6px 0px #2d3741; }
+        
         .btn-leer-mas { display: inline-block; background: #ffffff; color: #0b0f12; padding: 12px 24px; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 1rem; border: 2px solid #ffffff; transition: transform 0.1s; }
         .btn-leer-mas:hover { transform: translate(-2px, -2px); box-shadow: 4px 4px 0px #2d3741; }
 
-        /* Estilo para el contenedor de imagen insertado */
         .ad-container { margin-top: 40px; }
         .ad-container img { display: block; width: 100%; height: auto; }
 
         .sidebar { background: #ffffff; color: #0b0f12; padding: 25px; border: 3px solid #ffffff; box-shadow: 6px 6px 0px #2d3741; height: fit-content; display: flex; flex-direction: column; }
         .sidebar h3 { font-size: 1.8rem; text-transform: uppercase; margin-bottom: 15px; border-bottom: 3px solid #0b0f12; padding-bottom: 5px; }
-        .sidebar p { font-family: 'Arial', sans-serif; font-size: 1rem; font-weight: bold; margin-bottom: 20px; }
         
         .dossier-card { background: #161c22; color: #ffffff; padding: 20px; margin-bottom: 15px; border: 2px solid #0b0f12; }
         .dossier-card h4 { font-size: 1.2rem; text-transform: uppercase; color: #ffffff; margin-bottom: 5px; }
@@ -101,15 +95,12 @@
 
         <div class="main-content">
             <section class="main-story">
-                <span class="tag-destacado">Opinión</span>
-                <figure class="story-image-container">
-                    <img src="sede-chimbas.jpg" alt="Inauguración Sede">
-                    <figcaption>Despliegue territorial: la incógnita financiera tras la apertura de nuevas sedes.</figcaption>
-                </figure>
-                <h2>El "Mago" de las Sedes: ¿Cómo inaugurar locales con 174 millones bajo el brazo?</h2>
-                <div class="meta-info">El Marques bajo la luz | 23 de Junio de 2026</div>
-                <p>En San Juan, la política ha dejado de ser una cuestión de proyectos para convertirse en un fascinante acto de ilusionismo. Mientras el diputado nacional José Peluc desafía las leyes de la economía inaugurando sedes de La Libertad Avanza, su historial crediticio —que acumula 174 millones de pesos en deudas— plantea una pregunta inevitable.</p>
-                <a href="nota-3.html" class="btn-leer-mas">Leer columna completa →</a>
+                <span class="tag-destacado">Investigación</span>
+                <img src="13-embajadores.png" alt="Delegación diplomática" class="imagen-blender">
+                <h2>La sombra del cobre: El trasfondo del millonario crédito europeo para la infraestructura minera en San Juan</h2>
+                <div class="meta-info">Por Oscar Alfredo Mazueco | 25 de Junio de 2026</div>
+                <p>Una investigación revela cómo el millonario crédito europeo para infraestructura eléctrica en San Juan actúa como pieza clave para habilitar proyectos mineros bajo el RIGI. El análisis expone la asimetría entre la garantía soberana argentina y el retorno de valor hacia la cadena industrial de la Unión Europea.</p>
+                <a href="nota-5.html" class="btn-leer-mas">Leer columna completa →</a>
                 
                 <section class="ad-container">
                     <img src="time-travel.png" alt="Flyer Time Travel">
@@ -120,6 +111,12 @@
                 <h3>El Búnker</h3>
                 <p>Opinión libre e independiente sin intermediarios corporativos.</p>
                 
+                <div class="dossier-card">
+                    <h4>EL "MAGO" DE LAS SEDES</h4>
+                    <p>¿Cómo inaugurar locales con 174 millones bajo el brazo?</p>
+                    <a href="nota-3.html" class="btn-download">Leer Archivo</a>
+                </div>
+
                 <div class="dossier-card">
                     <h4>ENTRE LA SOBERANÍA Y LA SOLEDAD</h4>
                     <p>La fábula de los límites provinciales.</p>
